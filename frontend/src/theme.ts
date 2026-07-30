@@ -180,6 +180,13 @@ export function getTheme(mode: PaletteMode): Theme {
           root: {
             borderRadius: 8,
           },
+          input: {
+            '&:-webkit-autofill': {
+              WebkitTextFillColor: t.textPrimary,
+              WebkitBoxShadow: `0 0 0 1000px ${t.bgDefault} inset`,
+              transition: 'background-color 5000s ease-in-out 0s',
+            },
+          },
         },
       },
       MuiTabs: {
